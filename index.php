@@ -1,27 +1,35 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website with Login and Register</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+<?php
+    include('includes/header.php');
+?>
     <header>
-        <div class="logo"><h2>Logo</h2></div>
-        <div class="menu">
+        <a class="logo"><h2>Logo</h2></a>
+        <!-- Navigation Menu -->
+        <div class="menu web-menu">
             <a href="#">home</a>
             <a href="#">about</a>
             <a href="#">services</a>
             <a href="#">contact</a>
-            <button class="btnLogin-popup">Login</button>
+            <button class="btnLogin-popup" id="webLoginBtn">Login</button>
         </div>
+
+        <div class="menu mobile-menu">
+            <a id="icon-mobile-menu" href="javascript:void(0);" onclick="menuMobileOpen()"><i class="fa-solid fa-bars"></i></a>
+            <div class="mobile-menu-options">
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">services</a>
+                <a href="#">contact</a>
+                <button class="btnLogin-popup" id="mobileLoginBtn">Login</button>
+            </div>
+        </div>
+
     </header>
 
+    <!-- Wrapper -->
     <div class="wrapper">
-    <span class="icon-close"><i class="fa-regular fa-circle-xmark"></i></span>
+         <!-- Close Icon -->
+        <span class="icon-close"><i class="fa-regular fa-circle-xmark"></i></span>
+        <!-- Login Form -->
         <div class="form-box login">
             <h2>Login</h2>
             <form action="" method="post">
@@ -46,6 +54,7 @@
             </form>
         </div>
 
+        <!-- Sign up Form -->
         <div class="form-box register">
             <h2>New Nakama</h2>
             <form action="" method="post">
@@ -74,7 +83,17 @@
             </form>
         </div>
     </div>
-
-    <script src="./script/script.js" type="text/javascript" ></script>
-</body>
-</html>
+    <!-- MAIN-SECTION -->
+    <section class="main-section">
+        <div class="main-text">
+            <h3>How to become...</h3>
+            <h1>Full Stack Developer</h1>
+            <p>Becoming a full stack developer requires a combination of technical skills and practical experience. It's important to have a strong foundation in both front-end and back-end development, as well as knowledge of popular tools and technologies used in the industry. Building real-world projects, collaborating with other developers, and continuously learning and improving your skills are also essential steps to becoming a successful full stack developer</p>
+        </div>
+        <div class="main-img">
+            <img src="./img/Elite-Full-Stack-Development.png" alt="Elite Full Stack Development">
+        </div>
+    </section>
+<?php
+    include('includes/footer.php');
+?>

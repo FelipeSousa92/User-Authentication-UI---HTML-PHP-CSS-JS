@@ -414,6 +414,10 @@ section.main-section{
         display: flex;
     }
 
+    .mobile-menu-scroll{
+        background: linear-gradient(70deg, #6202be, #6202be, #7c02d2);
+    }
+
     div.mobile-menu-options{
         position: absolute;
         width: 280px;
@@ -474,7 +478,6 @@ section.main-section{
     section.main-section{
         flex-direction: column;
         padding: 95px 0 0 0;
-        margin-top: 0;
     }
 
     .main-text, .main-img{

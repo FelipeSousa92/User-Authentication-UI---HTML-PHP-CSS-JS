@@ -12,7 +12,7 @@
             <button class="btnLogin-popup" id="webLoginBtn">Login</button>
         </div>
 
-        <div class="menu mobile-menu">
+        <div class="menu mobile-menu" id="mobile-menu">
             <a id="icon-mobile-menu" href="javascript:void(0);" onclick="menuMobileOpen()"><i class="fa-solid fa-bars"></i></a>
             <div class="mobile-menu-options">
                 <a href="#">home</a>
